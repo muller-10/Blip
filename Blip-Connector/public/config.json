@@ -1,0 +1,54 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+      "icon": "images/icon.png",
+      "category": "Message"
+    },
+    "type": "Rest",
+    "lang": {
+      "pt-BR": {
+        "name": "Blip Message Whatsapp",
+        "description": "Blip Connector"
+      }
+    },
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": [],
+        "url": "https://blip-message-a4e09e5b7b2d.herokuapp.com/execute",
+        "verb": "POST",
+        "body": "",
+        "header": "",
+        "format": "json",
+        "timeout": 10000
+      }
+    },
+    "configurationArguments": {
+      "save": {
+        "inArguments": [],
+        "outArguments": [],
+        "url": "https://blip-message-a4e09e5b7b2d.herokuapp.com/save",
+        "body": "",
+        "header": "",
+        "format": "json",
+        "timeout": 10000
+      },
+      "publish": {
+        "url": "https://blip-message-a4e09e5b7b2d.herokuapp.com/publish"
+      },
+      "validate": {
+        "url": "https://blip-message-a4e09e5b7b2d.herokuapp.com/validate"
+      },
+      "stop": {
+        "url": "https://blip-message-a4e09e5b7b2d.herokuapp.com/stop"
+      }
+    },
+    "schema": {
+      "arguments": {
+        "execute": {
+          "inArguments": [],
+          "outArguments": []
+        }
+      }
+    }
+  }
